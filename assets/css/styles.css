@@ -111,14 +111,14 @@ img {
     padding: 5.5rem 0 1rem;
 }
 
-.section__title,
-.section__title-center {
+.section_title,
+.section_title-center {
     font-size    : var(--h2-font-size);
     margin-bottom: var(--mb-2);
     line-height  : 140%;
 }
 
-.section__title-center {
+.section_title-center {
     text-align: center;
 }
 
@@ -424,4 +424,65 @@ img {
 
 .steps_card:hover .steps_card-number {
     transform: translateY(-.25rem);
+}
+
+
+/*=============== PRODUCT ===============*/
+.product_container {
+    padding              : 3rem 0;
+    grid-template-columns: repeat(2, 1fr);
+    gap                  : 2.5rem 3rem;
+}
+
+.product_description {
+    text-align: center;
+}
+
+.product_card {
+    display : grid;
+    position: relative;
+}
+
+.product_img {
+    position     : relative;
+    width        : 120px;
+    justify-self : center;
+    margin-bottom: var(--mb-0-75);
+    transform    : .3s;
+}
+
+.product_title,
+.product_price {
+    font-size  : var(--small-font-size);
+    font-weight: var(--font-semi-bold);
+    color      : var(--title-color);
+}
+
+.product_title {
+    margin-bottom: .25rem;
+}
+
+.product_button {
+    background   : var(--first-color);
+    color        : #fff;
+    position     : absolute;
+    right        : 0;
+    bottom       : 0;
+    font-size    : 1.15rem;
+    padding      : .25rem;
+    border-radius: .35rem;
+}
+
+.product__circle {
+    width        : 90px;
+    height       : 90px;
+    background   : var(--first-color-lighten);
+    border-radius: 50%;
+    position     : absolute;
+    top          : 19%;
+    left         : 5%;
+}
+
+.product_card:hover .product_img {
+    transform: translateY(-.5rem);
 }

@@ -379,3 +379,49 @@ img {
     color     : var(--first-color);
     margin-top: .15rem;
 }
+
+/*=============== STEPS ===============*/
+.steps_bg {
+    background-color: var(--first-color-alt);
+    padding         : 3rem 2rem 2rem;
+    border-radius   : 1rem;
+}
+
+.steps_title {
+    color: #fff;
+}
+
+.steps__container {
+    padding-top: 1rem;
+    gap        : 2rem;
+}
+
+.steps_card {
+    background-color: var(--container-color);
+    padding         : 2.5rem 3rem 2rem 1.5rem;
+    border-radius   : 1rem;
+}
+
+.steps_card-number {
+    background-color: var(--first-color-alt);
+    color           : #fff;
+    display         : inline-block;
+    padding         : .5rem .75rem;
+    border-radius   : .25rem;
+    font-size       : var(--h2-font-size);
+    margin-bottom   : var(--mb-1-5);
+    transform       : .3s;
+}
+
+.steps_card-title {
+    font-size    : var(--h3-font-size);
+    margin-bottom: var(--mb-0-5);
+}
+
+.steps_card-description {
+    font-size: var(--small-font-size);
+}
+
+.steps_card:hover .steps_card-number {
+    transform: translateY(-.25rem);
+}

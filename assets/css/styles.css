@@ -450,7 +450,7 @@ the website, in dark theme
     color: #fff;
 }
 
-.steps__container {
+.steps_container {
     padding-top: 1rem;
     gap        : 2rem;
 }

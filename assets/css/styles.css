@@ -137,6 +137,22 @@ img {
     /*For animation*/
 }
 
+/* Active link */
+.active-link {
+    position: relative;
+    color   : var(--first-color) !important;
+}
+
+.active-link::after {
+    content         : '';
+    position        : absolute;
+    bottom          : -.5rem;
+    left            : 0;
+    width           : 50%;
+    height          : 2px;
+    background-color: var(--first-color);
+}
+
 /*=============== HEADER ===============*/
 .header {
     width           : 100%;
